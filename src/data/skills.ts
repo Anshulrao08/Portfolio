@@ -1,0 +1,127 @@
+import type { SkillCategory } from "./types";
+
+export const skillCategories: SkillCategory[] = [
+  {
+    id: "languages",
+    title: "Programming Languages",
+    subtitle: "Core languages applied across desktop, mobile, and algorithmic coursework",
+    basisSummary: "Applied in projects & coursework",
+    items: [
+      { name: "Python", basis: "project", note: "Used in S.A.R.A. and Jaarvis" },
+      { name: "Java", basis: "project", note: "Used in Pursuit, DSA Bootcamp & GUI Workshop" },
+      { name: "C", basis: "fundamentals", note: "Foundational programming & logic" },
+      { name: "JavaScript", basis: "project", note: "Web development & interactive scripting" },
+    ],
+  },
+  {
+    id: "web",
+    title: "Web Development",
+    subtitle: "Primary career focus in responsive, user-friendly interfaces",
+    basisSummary: "Project & continuous learning focus",
+    items: [
+      { name: "HTML", basis: "project" },
+      { name: "JavaScript", basis: "project" },
+    ],
+  },
+  {
+    id: "mobile",
+    title: "Mobile Development",
+    subtitle: "Native Android engineering for Pursuit fitness tracker",
+    basisSummary: "Applied in Pursuit",
+    items: [
+      { name: "Android Development", basis: "project" },
+      { name: "Java", basis: "project" },
+      { name: "XML", basis: "project" },
+      { name: "Firebase", basis: "project" },
+    ],
+  },
+  {
+    id: "desktop",
+    title: "Desktop Development",
+    subtitle: "Desktop interfaces built for AI assistants and GUI workshops",
+    basisSummary: "Applied in projects & workshops",
+    items: [
+      { name: "PyQt5", basis: "project", note: "Used in S.A.R.A." },
+      { name: "Java GUI", basis: "workshop", note: "Java GUI Development Workshop" },
+      { name: "NetBeans IDE", basis: "workshop", note: "Java GUI Development Workshop" },
+    ],
+  },
+  {
+    id: "ai",
+    title: "Artificial Intelligence",
+    subtitle: "LLM orchestration, speech pipelines, and voice synthesis",
+    basisSummary: "Applied in S.A.R.A.",
+    items: [
+      { name: "Groq API", basis: "project" },
+      { name: "Cohere API", basis: "project" },
+      { name: "Hugging Face", basis: "project" },
+      { name: "ElevenLabs", basis: "project" },
+      { name: "SpeechRecognition", basis: "project" },
+      { name: "AI Assistant Development", basis: "project" },
+    ],
+  },
+  {
+    id: "automation",
+    title: "Automation",
+    subtitle: "Programmatic browser control and desktop workflow execution",
+    basisSummary: "Applied in S.A.R.A.",
+    items: [
+      { name: "Selenium", basis: "project" },
+      { name: "Playwright", basis: "project" },
+      { name: "PyAutoGUI", basis: "project" },
+    ],
+  },
+  {
+    id: "databases",
+    title: "Databases",
+    subtitle: "Cloud data sync and vector retrieval",
+    basisSummary: "Applied in Pursuit & S.A.R.A.",
+    items: [
+      { name: "Firebase", basis: "project", note: "Pursuit backend" },
+      { name: "ChromaDB", basis: "project", note: "S.A.R.A. context retrieval" },
+    ],
+  },
+  {
+    id: "cs-fundamentals",
+    title: "Computer Science Fundamentals",
+    subtitle: "Core problem-solving foundations strengthened through mentorship",
+    basisSummary: "Coursework & DSA Mentorship",
+    items: [
+      { name: "Data Structures", basis: "fundamentals" },
+      { name: "Algorithms", basis: "fundamentals" },
+      { name: "Object-Oriented Programming", basis: "fundamentals" },
+      { name: "Problem Solving", basis: "fundamentals" },
+    ],
+  },
+  {
+    id: "additional-exposure",
+    title: "Additional Technical Exposure",
+    subtitle: "Topics explored through hands-on workshops and security sessions",
+    basisSummary: "Explored via workshops",
+    items: [
+      { name: "DevOps", basis: "workshop", note: "DevOps Workshop (Nov 2025)" },
+      { name: "Cybersecurity", basis: "workshop", note: "Everhack Workshop" },
+      { name: "Ethical Hacking", basis: "workshop", note: "Everhack Workshop" },
+      { name: "Bug Bounty", basis: "workshop", note: "Everhack Workshop" },
+      { name: "Vulnerability Assessment", basis: "workshop", note: "Everhack Workshop" },
+    ],
+  },
+  {
+    id: "leadership-management",
+    title: "Leadership & Management",
+    subtitle: "People, planning, and technical community execution",
+    basisSummary: "Applied across clubs & events",
+    items: [
+      { name: "Team Leadership", basis: "leadership" },
+      { name: "Event Management", basis: "leadership" },
+      { name: "Team Coordination", basis: "leadership" },
+      { name: "Communication", basis: "leadership" },
+      { name: "Technical Mentorship", basis: "leadership" },
+      { name: "Planning", basis: "leadership" },
+      { name: "Time Management", basis: "leadership" },
+      { name: "Community Building", basis: "leadership" },
+      { name: "Teamwork", basis: "leadership" },
+      { name: "Problem Solving", basis: "leadership" },
+    ],
+  },
+];
