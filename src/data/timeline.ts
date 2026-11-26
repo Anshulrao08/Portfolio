@@ -2,12 +2,12 @@ import type { TimelineEntry } from "./types";
 
 export const timelineEntries: TimelineEntry[] = [
   {
-    id: "tl-class-x",
-    dateLabel: "2021",
-    title: "Completed Class X",
+    id: "tl-class-12",
+    dateLabel: "2023",
+    title: "Completed Class 12 (Senior Secondary Education)",
     subtitle: "Dev Krishna Public School",
     category: "Education",
-    description: "Completed Secondary Education (Class X).",
+    description: "Completed Senior Secondary Education (Class 12).",
   },
   {
     id: "tl-bca-start",

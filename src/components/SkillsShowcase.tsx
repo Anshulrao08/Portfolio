@@ -81,8 +81,8 @@ export function SkillsShowcase() {
         <SectionHeading
           index="04"
           eyebrow="Capabilities"
-          title="Technical stack, fundamentals, and leadership."
-          description="Clearly distinguishing technologies applied directly in software projects from topics explored through hands-on workshops."
+          title="Technologies & Technical Exposure"
+          description="My technical experience comes from hands‑on projects, academic learning, experimentation, and continuous exploration. The technologies listed here represent tools and concepts I have worked with or explored, rather than a claim of advanced proficiency in every area."
         />
 
         {/* Controls */}
