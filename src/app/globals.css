@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
+/* Theme variables – light & dark */
 :root,
 [data-theme="dark"] {
-  /* Dark mode variables */
   --bg: #171A18;
   --bg-secondary: #222723;
   --bg-elevated: #2a2f2c;
@@ -16,57 +16,20 @@
 }
 
 [data-theme="light"] {
-  /* Light mode variables */
   --bg: #F4F1EA;
-  --bg-secondary: #F4F1EA; /* same as bg for simplicity */
+  --bg-secondary: #F4F1EA;
   --bg-elevated: #F4F1EA;
   --text: #1C1C1C;
   --text-secondary: #62665F;
   --accent: #344E41;
   --accent-secondary: #BC6C25;
-  --accent-ink: #F4F1EA; /* inverse of accent */
+  --accent-ink: #F4F1EA;
   --border: #DAD7CD;
-  --border-strong: #DAD7CD; /* could be darker */
-  --grain-opacity: 0.025;
-}
-  --bg: #101010;
-  --bg-secondary: #171717;
-  --bg-elevated: #1c1c1c;
-  --text: #f4f2ed;
-  --text-secondary: #a3a3a3;
-  --accent: #c6f432;
-  --accent-ink: #101010;
-  --border: #292929;
-  --border-strong: #3a3a3a;
-  --grain-opacity: 0.032;
-}
-
-[data-theme="light"] {
-  /* Light mode variables */
-  --bg: #F4F1EA;
-  --bg-secondary: #F4F1EA; /* same as bg for simplicity */
-  --bg-elevated: #F4F1EA;
-  --text: #1C1C1C;
-  --text-secondary: #62665F;
-  --accent: #344E41;
-  --accent-secondary: #BC6C25;
-  --accent-ink: #F4F1EA; /* inverse of accent */
-  --border: #DAD7CD;
-  --border-strong: #DAD7CD; /* could be darker */
-  --grain-opacity: 0.025;
-}
-  --bg: #f5f3ee;
-  --bg-secondary: #eae8e2;
-  --bg-elevated: #e2dfd7;
-  --text: #171717;
-  --text-secondary: #626262;
-  --accent: #496600;
-  --accent-ink: #f5f3ee;
-  --border: #d5d1c8;
-  --border-strong: #bdb8ac;
+  --border-strong: #DAD7CD;
   --grain-opacity: 0.025;
 }
 
+/* Tailwind CSS variable mappings */
 @theme inline {
   --color-bg: var(--bg);
   --color-bg-secondary: var(--bg-secondary);
@@ -82,25 +45,22 @@
   --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
+/* Base styles */
 html {
   background-color: var(--bg);
   color: var(--text);
   scroll-behavior: smooth;
 }
-
 html.lenis,
 html.lenis body {
   height: auto;
 }
-
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
-
 .lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
 }
-
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -109,7 +69,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-
 .grain-overlay {
   pointer-events: none;
   position: fixed;
@@ -118,12 +77,10 @@ body {
   opacity: var(--grain-opacity);
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
-
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
-
 .skip-to-content {
   position: fixed;
   top: -100px;
@@ -139,21 +96,17 @@ body {
   text-transform: uppercase;
   transition: top 0.15s ease;
 }
-
 .skip-to-content:focus {
   top: 16px;
 }
-
 .font-display {
   font-family: var(--font-display);
 }
-
 .font-mono-label {
   font-family: var(--font-mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -164,14 +117,12 @@ body {
     scroll-behavior: auto !important;
   }
 }
-
 [data-recruiter-mode="true"] *,
 [data-recruiter-mode="true"] *::before,
 [data-recruiter-mode="true"] *::after {
   animation-duration: 0.01ms !important;
   transition-duration: 0.01ms !important;
 }
-
 @media print {
   header,
   footer,
@@ -179,13 +130,11 @@ body {
   .grain-overlay {
     display: none !important;
   }
-
   body {
     background: #ffffff !important;
     color: #111111 !important;
     font-size: 11pt;
   }
-
   a {
     color: #111111 !important;
     text-decoration: none !important;
