@@ -7,6 +7,8 @@ import { ProjectsShowcase } from "@/components/ProjectsShowcase";
 import { SkillsShowcase } from "@/components/SkillsShowcase";
 import { StatsAndEducation } from "@/components/StatsAndEducation";
 
+import ImpactCounters from "@/components/ImpactCounters";
+
 export default function HomePage() {
   return (
     <>

@@ -2,6 +2,33 @@
 
 :root,
 [data-theme="dark"] {
+  /* Dark mode variables */
+  --bg: #171A18;
+  --bg-secondary: #222723;
+  --bg-elevated: #2a2f2c;
+  --text: #F4F1EA;
+  --text-secondary: #A9ADA5;
+  --accent: #A3B18A;
+  --accent-ink: #171A18;
+  --border: #3a3e3c;
+  --border-strong: #4d514f;
+  --grain-opacity: 0.032;
+}
+
+[data-theme="light"] {
+  /* Light mode variables */
+  --bg: #F4F1EA;
+  --bg-secondary: #F4F1EA; /* same as bg for simplicity */
+  --bg-elevated: #F4F1EA;
+  --text: #1C1C1C;
+  --text-secondary: #62665F;
+  --accent: #344E41;
+  --accent-secondary: #BC6C25;
+  --accent-ink: #F4F1EA; /* inverse of accent */
+  --border: #DAD7CD;
+  --border-strong: #DAD7CD; /* could be darker */
+  --grain-opacity: 0.025;
+}
   --bg: #101010;
   --bg-secondary: #171717;
   --bg-elevated: #1c1c1c;
@@ -15,6 +42,19 @@
 }
 
 [data-theme="light"] {
+  /* Light mode variables */
+  --bg: #F4F1EA;
+  --bg-secondary: #F4F1EA; /* same as bg for simplicity */
+  --bg-elevated: #F4F1EA;
+  --text: #1C1C1C;
+  --text-secondary: #62665F;
+  --accent: #344E41;
+  --accent-secondary: #BC6C25;
+  --accent-ink: #F4F1EA; /* inverse of accent */
+  --border: #DAD7CD;
+  --border-strong: #DAD7CD; /* could be darker */
+  --grain-opacity: 0.025;
+}
   --bg: #f5f3ee;
   --bg-secondary: #eae8e2;
   --bg-elevated: #e2dfd7;
